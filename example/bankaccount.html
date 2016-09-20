@@ -1,0 +1,40 @@
+<html>
+    <script>
+        var balance=0
+        function deposit(){
+            var depositamount=prompt("How much do you want to deposit?");
+            var balance=balance+depositamount
+        }
+        
+        function withdraw(){
+            var withdrawloop=1
+            while (withdrawloop==1){
+                var withdrawamount=prompt("How much do you want to withdraw?");
+                if (withdrawamount>=balance){
+                    alert("You don't have enough money");
+                }
+                else{
+                    withdrawloop=0
+                    var balance=(balance-withdrawamount);
+                }
+            }
+        }
+        
+        var loopmain=1
+        while (loopmain==1){
+            var promptmain=prompt("Do you want to deposit or withdraw?");
+            if promptmain==("Deposit"||"deposit"||"d"||"D"||"Withdraw"||"withdraw"||"w"||"W"){
+                loopmain=0
+                if promptmain==("Deposit"||"deposit"||"d"||"D"){
+                    deposit()
+                }
+                if promptmain==("Withdraw"||"withdraw"||"w"||"W"){
+                    withdraw()
+                }
+            }
+            else{
+                alert("what");  
+            }
+        }
+    </script>
+</html>
