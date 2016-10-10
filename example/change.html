@@ -1,0 +1,34 @@
+<html>
+    <script>
+        function change(){
+            var quartercount=0;
+            var dimecount=0;
+            var nickelcount=0;
+            var pennycount=0;
+            var money=prompt("How much are you paying?");
+            var moneyt=money;
+            while (moneyt >= .25){
+                var quartercount=quartercount+1;
+                moneyt=moneyt-.25;
+                moneyt=Math.round(moneyt*100)/100;
+            }
+            while (moneyt >= .1){
+                var dimecount=dimecount+1;
+                moneyt=moneyt-.1;
+                moneyt=Math.round(moneyt*100)/100;
+            }
+            while (moneyt >= .05){
+                var nickelcount=nickelcount+1;
+                moneyt=moneyt-.05;
+                moneyt=Math.round(moneyt*100)/100;
+            }
+            while (moneyt >= .01){
+                var pennycount=pennycount+1;
+                moneyt=moneyt-.01;
+                moneyt=Math.round(moneyt*100)/100;
+            }
+            alert(quartercount + " quarter(s), " + dimecount + " dime(s), " + nickelcount + " nickel(s), " + pennycount + " pennies");
+        }
+        change()
+    </script>
+</html>
