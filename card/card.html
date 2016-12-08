@@ -1,0 +1,27 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+        <p>Merry Christmas!</p>
+        <link rel="stylesheet" type="text/css" href="card.css"/>
+        <div id="photowrapper">
+            <img src="imageArray" id="thePhoto">
+        </div>
+        <div id="buttons">
+            <button onclick="backImage()" type="button" id="backButton">Back</button>
+            <button onclick="forwardImage()"type="button" id="forwardButton">Forward</button>
+        </div>
+        <div id="curve_chart" style="width: 900px; height: 500px"></div>
+        <a href="http://bonzi.link/" target="_blank">
+            <img id=ad onclick="document.getElementById('bonzi').style.visibility = 'visible'" border="0" width="350" height="300" src="ad.gif">
+        </a>
+        <img id=bonzi border="0" width="178" height="129" src="1idle.png"> 
+        
+        <script src="http://code.jquery.com/jquery-latest.min.js"
+        type="text/javascript"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script src="card.js" type="text/javascript"></script>
+        
+    </body>
+</html>

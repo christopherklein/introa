@@ -1,0 +1,29 @@
+#picture{
+    float:center;
+    size:20%;
+}
+#curve_chart{
+    margin:auto;
+    border-width:10px;
+    border-style:outset;
+    border-color:97baf0;
+}
+#bonzi{
+    visibility:hidden;
+    position:fixed;
+    right:-20px;
+    bottom:1px;
+}
+body{
+    background-color:3f4d63;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 250%;
+    color:97baf0;
+    text-align:center;
+}
+#buttons{
+    float:center;
+}
+#ad{
+    padding-top:10px;
+}
